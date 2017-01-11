@@ -1,3 +1,4 @@
+/*
 var firstName = "Cameron";
 var age = 37;
 var message = firstName + ": " + 55
@@ -44,3 +45,5 @@ var schoolName = "Living School";
 var gradDate = 1999;
 var message = "I graduated from" + " " + schoolName + " " + "in"+ " " + gradDate;
 console.log(message);
+*/
+

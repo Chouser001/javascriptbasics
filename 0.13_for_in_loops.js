@@ -21,7 +21,7 @@ var vowelcount = 0;
 var favFood = "pizza";
 console.log(favFood.length);
 for (letter in favFood) {
-	if (favFood[letter].toLowerCase() == "a") { // repeat through vowels
+	if (favFood[letter].toLowerCase() == "a" || ) { // repeat through vowels
 		vowelcount++
 	}
 }	

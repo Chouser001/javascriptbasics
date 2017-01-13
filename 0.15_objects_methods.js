@@ -1,6 +1,7 @@
 // OBJECTS LITERAILS WITH METHODS
 // function  inside of an object  
 
+
 var player = {
 	// properties 
 	name 	: "",

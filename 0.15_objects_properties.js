@@ -39,6 +39,9 @@ var bookShelf = {
 	wasRead 			: true,
 	favLine				: "",
 };
+
+// how to add properties to an Object literal
+bookShelf.numPages = 566
 //TODO look this up!
 //bookShelf.prototype.numpages = "";
 

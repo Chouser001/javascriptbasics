@@ -114,7 +114,7 @@ if (name == "Adam") {
 }
 }
 
-var addGreeting = greeting2("Sam");
+var addGreeting = greeting2("Adam");
 console.log(addGreeting)
 
 // Write a function with two strings as parameters.

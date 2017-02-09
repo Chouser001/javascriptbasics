@@ -1,27 +1,19 @@
-// The rule is simple: when the property names
-// are small sequential integers, you should use an array. Otherwise, use an object
+var is_array = function (value) {
+return value &&
+typeof value === 'object' &&
+value.constructor === Array;
+};
 
-// Create an array of numbers.
-var data = [4, 8, 15, 16, 23, 42];
-// Define two simple functions. One will add two
-// numbers. The other will multiply two numbers.
-var add = function (a, b) {
-return a + b;
+var is_array = function (value) {
+return value &&
+typeof value === 'object' &&
+typeof value.length === 'number' &&
+typeof value.splice === 'function' &&
+!(value.propertyIsEnumerable('length'));
 };
-var mult = function (a, b) {
-return a * b;
-};
-// Invoke the data's reduce method, passing in the
-// add function.
-var sum = data.reduce(add, 0); // sum is 108
-// Invoke the reduce method again, this time passing
-// in the multiply function.
-var product = data.reduce(mult, 1);
-// product is 7418880
 
-// Give the data array a total function.
-data.total = function ( ) {
-return this.reduce(add, 0);
-};
-total = data.total( ); // total is 108
-// the array now begins to be a object
+// it is possible to write functions that do one thing when passed a
+// single value and lots of things when passed an array of values.
+
+// if the length property is enumerable (will length be produced by a for in loop?).
+// That will be false for all arrays.

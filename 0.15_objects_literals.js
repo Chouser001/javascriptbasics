@@ -30,6 +30,6 @@ var flight = {
         city: "San-Antonio"
     }
 };
-// console.log(flight.arrival); 
+console.log(flight.arrival.city); 
 
 

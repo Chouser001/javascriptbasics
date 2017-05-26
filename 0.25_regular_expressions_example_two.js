@@ -38,3 +38,11 @@ test('123.45D-67'); // false
 // (?:e[+\-]?\d+)?
 // This is another optional noncapturing group. It matches e (or E), an optional sign,
 // and one or more digits.
+
+
+var b = "too"
+var c = "talk"
+
+var bc = b + c
+
+console.log(bc)
